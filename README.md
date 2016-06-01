@@ -1,10 +1,14 @@
 # Playfest <img src="frontend/www/img/playfest-logo.png" width="90" />
 
 ### What is it?
-Playfest is an app in which the user can take a picture via their phone camera of a festival or concert photo, log in to Spotify and get a playlist with the top ten songs of artists displayed on that festival poster. The backend is built with Express and Node.js, and the frontend with Ionic which uses AngularJS. Our app uses an optical character recognition (OCR) API and the spotify API.
+Playfest lets a user to take a picture of a festival poster with their smartphone, log in to Spotify and receive a playlist populated with tracks by artists featured on the poster. The backend is built with Express and Node.js and the frontend uses Ionic and AngularJS. Our app utilises an optical character recognition (OCR) API in conjunction with the Spotify API.
 
 ### Challenges
-One challenge we faced was figuring out how our app could recognise which words on the poster were relevant to creating our playlists. We tried a few approaches, for example identifying the festival by location or dates and using the Songkick API to cross check the festival and then find relevant artists. However, because there is no consistency in the appearance and format of this information from one poster to the next, none of these strategies produced a reliable solution. We overcame this hurdle when we realised that our OCR software could also recognise the relative size of the text displayed on the page and therefore, since big acts are usually represented with larger text, we could tailor our code to identify those prominent artists. Right now, the OCR is not perfect (for example, it cannot recognise some artists due to warped fonts), but we feel happy we've reached a workable solution and will strive to keep improving our app.
+A specific challenge we faced was how to get the app to recognise the words on the poster that would be relevant to creating our playlists. We tried a few approaches, such as identifying the festival by location and dates, using the Songkick API to confirm the correct event and then returning its prominent artists.
+
+However, as there's no consistency in the presentation of this information from one poster to the next, none of these strategies produced a reliable solution. We overcame this hurdle when we realised that our OCR software could also recognise the relative size of the text on the page and therefore, since big acts are typically represented with larger text, we could tailor our code to identify those prominent artists.
+
+Right now, the OCR is not perfect (for example, it cannot recognise some artists due to warped fonts), but we feel happy we've reached a workable solution and will strive to keep improving our app.
 
 ### Watch a demo
 https://www.youtube.com/watch?v=OAF3pvoFZVU&feature=youtu.be
