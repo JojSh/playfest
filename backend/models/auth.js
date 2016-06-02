@@ -1,7 +1,7 @@
 var passport = require('passport');
 var SpotifyStrategy = require('passport-spotify').Strategy;
 
-var client_id     = "873379a32a354918b0a54f4f79736716";
+var client_id     = "21cd876a34c849c7978de3b74d99dfe0";
 var client_secret = process.env.CLIENT_SECRET;
 var cookieParser = require('cookie-parser');
 
